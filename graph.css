@@ -1,0 +1,61 @@
+:root {
+            --bg-light: #ffffff;
+            --text-light: #1f2937;
+            --border-light: #e5e7eb;
+            --panel-bg-light: #f9fafb;
+            --input-bg-light: #ffffff;
+            --grid-light: #d1d5db;
+            --axis-light: #6b7280;
+            --hover-light: #f3f4f6;
+
+            --bg-dark: #111827;
+            --text-dark: #f9fafb;
+            --border-dark: #374151;
+            --panel-bg-dark: #1f2937;
+            --input-bg-dark: #374151;
+            --grid-dark: #4b5563;
+            --axis-dark: #9ca3af;
+            --hover-dark: #374151;
+        }
+
+        .light {
+            --bg-color: var(--bg-light);
+            --text-color: var(--text-light);
+            --border-color: var(--border-light);
+            --panel-bg-color: var(--panel-bg-light);
+            --input-bg-color: var(--input-bg-light);
+            --grid-color: var(--grid-light);
+            --axis-color: var(--axis-light);
+            --hover-color: var(--hover-light);
+        }
+
+        .dark {
+            --bg-color: var(--bg-dark);
+            --text-color: var(--text-dark);
+            --border-color: var(--border-dark);
+            --panel-bg-color: var(--panel-bg-dark);
+            --input-bg-color: var(--input-bg-dark);
+            --grid-color: var(--grid-dark);
+            --axis-color: var(--axis-dark);
+            --hover-color: var(--hover-dark);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .panel { background-color: var(--panel-bg-color); border-color: var(--border-color); }
+        .input-field { background-color: var(--input-bg-color); border-color: var(--border-color); color: var(--text-color); }
+        .btn-hover:hover { background-color: var(--hover-color); }
+        .theme-switch-track { background-color: #777; }
+        .theme-switch-track:has(input:checked) { background-color: #818cf8; }
+        
+        canvas {
+            cursor: grab;
+        }
+        canvas:active {
+            cursor: grabbing;
+        }
